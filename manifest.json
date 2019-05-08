@@ -1,0 +1,14 @@
+{
+  "name": "Scrum for Asana",
+  "version": "0.1.0",
+  "description": "Inspired by Scrum for Trello.",
+  "manifest_version": 2,
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://app.asana.com/*"],
+      "css": ["styles.css"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
